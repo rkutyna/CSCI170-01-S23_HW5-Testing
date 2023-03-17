@@ -32,6 +32,23 @@ remove_first test case
 let q6 = TwoListDeque.remove_first q5;;
 assert([2;3;4;5;6] = TwoListDeque.remove_first q6);;
 
+(***
+map test case
+***)
+let q7 = TwoLIstDeque.map (fun x -> x+1) q6;;
+assert([3] = TwoListDeque.remove_first q7);;
+
+let q10 = TwoListDeque.map (fun x -> x+1) q7;;
+assert([4] = TwoListDeque.remove_first q10);;
+
+(*** 
+filter test cases
+***)
+let q8 = TwoListDeque.filter (fun x -> x mod 2 = 0) q6;;
+assert([2;4;6] = TwoListDeque.remove_first q8);;
+
+let q9 = TwoListDeque.filter (fun x -> x mod 2 = 1) q6;;
+assert([1;3;5] = TwoListDeque.remove_first q9);;
 
 
 
