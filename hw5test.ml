@@ -1,12 +1,14 @@
 let q1 = TwoListDeque.empty;;
 assert(0=(TwoListDeque.size q1));;
 
-<<<<<<< HEAD
 
+(* testing size 1 *)
 let jqueue = TwoListDeque.empty;;
 TwoListDeque.add_first 5 jqueue;;
 assert(1 = (TwoListDeque.size jqueue));;
-=======
+(* jonahs test *)
+
+
 (* ! lev's tests ! *)
 (* ? testing empty/is_empty *)
 let test = TwoListDeque.empty
@@ -28,4 +30,3 @@ let t5 = assert(TwoListDeque.peek_first test = 3)
 
 let t6 = assert(TwoListDeque.peek_last test = 4)
 (* ! lev's test end ! *)
->>>>>>> caf249b9ad216c819d5c8d14d80a6c7934a5a605
