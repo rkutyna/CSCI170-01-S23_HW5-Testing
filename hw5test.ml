@@ -15,7 +15,7 @@ let test_remove_first = TwoListDeque.remove_first test_add_last;;
 assert((TwoListDeque.peek_first)=4);;
 
 let test_remove_last = TwoListDeque.remove_last test_remove_first;;
-assert((TwoListDeque.is_empty test_remove_last)=true)
+assert((TwoListDeque.is_empty test_remove_last)=true);;
 
 
 assert(TwoListDeque.is_empty q1);;
