@@ -52,8 +52,12 @@ assert([1;3;5] = TwoListDeque.remove_first q9);;
 
 
 (***
-add_first two new elements
+add_first two new elements, check peek_first and peek_last
 ***)
-let q11 = TwoListDeque.add_first 1;;
+let q11 = TwoListDeque.empty;;
 
+let q12 = TwoListDeque.add_first 1 q11;;
+assert(1 = TwoListDeque.peek_first q12);;
 
+let q13 = TwoListDeque.add_last 100 q12;;
+assert(100 = TwoListDeque.peek_last q13);;
