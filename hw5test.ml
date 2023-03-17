@@ -8,7 +8,7 @@ assert(1 = TwoListDeque.size test_q);;
 let test_peak_first = test_q;;
 assert(1 = TwoListDeque.test_peak_first test_q);;
 
- let class_q = TwoListDeque.add_first "hello" q1;;
+let class_q = TwoListDeque.add_first "hello" q1;;
 class_q = TwoListDeque.add_first "world" class_q;;
 first_class_q = TwoListDeque.test_peak_first class_q;;
 class_q = TwoListDeque.remove_first class_q;;
