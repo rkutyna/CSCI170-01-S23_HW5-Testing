@@ -8,6 +8,7 @@ assert((TwoListDeque.peek_first test_add_first)=3);;
 let test_add_last = TwoListDeque.add_last 4 test_add_first;;
 assert((TwoListDeque.peek_first test_add_last)=3);;
 assert((TwoListDeque.peek_last test_add_last)=4);;
+assert((TwoListDeque.to_list test_add_last)=[3;4])
 
 let test_remove_first = TwoListDeque.remove_first test_add_last;;
 assert((TwoListDeque.peek_first)=4);;
