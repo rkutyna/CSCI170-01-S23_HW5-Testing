@@ -6,24 +6,24 @@ assert(0=(TwoListDeque.size q1));;
 (***
 Added a test case to test the add_first function of TwoListDeque
 ***)
-let q2 = TwoListDeque.add_first 3;;
-assert([3] = TwoListDeque.remove_first q2);;
+let q2 = TwoListDeque.add_first 1 q1;;
+assert([1] = TwoListDeque.remove_first q2);;
 
 (***
 Added a test case to test the add_last function of TwoListDeque
 ***)
-let q3 = TwoListDeque.add_last 1;;
+let q3 = TwoListDeque.add_last 1 q2;;
 assert([1] = TwoListDeque.remove_last q3);;
 (***
 add_first test case
 ***)
-let q4 = TwoListDeque.add_first [1;2;3];;
-assert(1 = TwoListDeque.peek_first q4);;
+let q4 = TwoListDeque.add_first [1;2;3] q3;;
+assert(1 = TwoListDeque.peek_first q4);; 
 assert(3 = TwoListDeque.peek_last q4);;
 (***
 add_last test case
 ***)
-let q5 = TwoListDeque.add_last [4;5;6];;
+let q5 = TwoListDeque.add_last [4;5;6] q3;;
 assert(6 = TwoListDeque.size q5);;
 assert(6 = TwoListDeque.peek_last q5);;
 (***
@@ -51,7 +51,9 @@ let q9 = TwoListDeque.filter (fun x -> x mod 2 = 1) q6;;
 assert([1;3;5] = TwoListDeque.remove_first q9);;
 
 
-
-
+(***
+add_first two new elements
+***)
+let q11 = TwoListDeque.add_first 1;;
 
 
