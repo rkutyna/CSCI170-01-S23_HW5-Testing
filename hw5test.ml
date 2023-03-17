@@ -1,4 +1,8 @@
 
+let ah_hi_bye_check = TwoListDeque.(empty |> add_first "hi" |> add_first "somewhere in between" |> add_first "bye");;
+assert("bye" = TwoListDeque.peek_first x);;
+
+
 open deque;; 
 let q1 = TwoListDeque.empty;;
 assert(0=(TwoListDeque.size q1));;
@@ -119,4 +123,3 @@ let t5 = assert(TwoListDeque.peek_first test = 3)
 
 let t6 = assert(TwoListDeque.peek_last test = 4)
 (* ! lev's test end ! *)
-
