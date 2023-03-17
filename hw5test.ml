@@ -5,6 +5,8 @@ let deque_empty = TwoListDeque.empty;;
 let deqeu_1 = TwoListDeque.(add_first 1 deque_empty);;
 let deque_2 = TwoListDeque.(add_first 2 deque_1);;
 
+assert(2 = TwoListDeque.peek_first deque_2);;
+
 assert(TwoListDeque.((to_list deque_empty) = []));;
 
 let is_empty_1 = TwoListDeque.(is_empty deque_empty);;
