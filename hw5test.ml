@@ -53,7 +53,11 @@ assert("bye" = TwoListDeque.peek_first ah_hi_bye_check);;
 let q1 = TwoListDeque.empty;;
 assert(0=(TwoListDeque.size q1));;
 
-
+let test_q = TwoListDeque.add_first 1 q1
+assert(1 = TwoListDeque.size test_q);;
+(* test 2*)
+let test_peak_first = test_q
+assert(1 = TwoListDeque.test_peak_first test_q);;
 
 (***
 Added a test case to test the add_first function of TwoListDeque
@@ -174,4 +178,3 @@ let t5 = assert(TwoListDeque.peek_first test = 3)
 
 let t6 = assert(TwoListDeque.peek_last test = 4)
 (* ! lev's test end ! *)
-
