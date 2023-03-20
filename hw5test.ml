@@ -6,6 +6,11 @@ let q1 = TwoListDeque.empty;;
 assert(0=(TwoListDeque.size q1));;
 
 
+(* peeking an empty deque returns empty *)
+let q2 = TwoListDeque.empty;;
+assert(Empty=(TwoListDeque.peek q2));;
+
+
 let test1_0_DA = Deque.is_empty [];;
 assert(test1_0_DA);;
 
@@ -169,3 +174,4 @@ let t5 = assert(TwoListDeque.peek_first test = 3)
 
 let t6 = assert(TwoListDeque.peek_last test = 4)
 (* ! lev's test end ! *)
+
